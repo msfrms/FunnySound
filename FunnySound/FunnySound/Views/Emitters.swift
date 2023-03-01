@@ -13,7 +13,6 @@ enum Emiters {
                 .velocity(500)
                 .velocityRange(250)
                 .emissionLongitude(.pi)
-    //            .emissionRange(.pi / 4)
         }
     }
 }

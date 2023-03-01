@@ -133,7 +133,7 @@ final class RainEmojiViewModel: ObservableObject {
                     self.startTimerToHideRainEmoji()
                     let emoji: State.Emoji = State.Emoji(text: text, classification: classification)
                     self.state = .show(.rain(emoji: emoji))
-                    print("classification: \(classification.rawValue)")
+
                 case .failure:
                     break
                 }
