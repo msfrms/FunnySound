@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF26145C29AFA644001D0A3A /* FunnySoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26145B29AFA644001D0A3A /* FunnySoundApp.swift */; };
+		CF26146029AFA645001D0A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF26145F29AFA645001D0A3A /* Assets.xcassets */; };
+		CF26146329AFA645001D0A3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF26146229AFA645001D0A3A /* Preview Assets.xcassets */; };
+		CF26146D29AFA645001D0A3A /* FunnySoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26146C29AFA645001D0A3A /* FunnySoundTests.swift */; };
+		CF26147729AFA645001D0A3A /* FunnySoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26147629AFA645001D0A3A /* FunnySoundUITests.swift */; };
+		CF26147929AFA645001D0A3A /* FunnySoundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26147829AFA645001D0A3A /* FunnySoundUITestsLaunchTests.swift */; };
+		CF2614A629AFA6FA001D0A3A /* SoundAnalysisInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148629AFA6FA001D0A3A /* SoundAnalysisInteractor.swift */; };
+		CF2614A729AFA6FA001D0A3A /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148829AFA6FA001D0A3A /* WaveformView.swift */; };
+		CF2614A829AFA6FA001D0A3A /* RainEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148929AFA6FA001D0A3A /* RainEmojiView.swift */; };
+		CF2614A929AFA6FA001D0A3A /* Emitters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148A29AFA6FA001D0A3A /* Emitters.swift */; };
+		CF2614AA29AFA6FA001D0A3A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148B29AFA6FA001D0A3A /* LottieView.swift */; };
+		CF2614AB29AFA6FA001D0A3A /* MicrophonePermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148C29AFA6FA001D0A3A /* MicrophonePermissionView.swift */; };
+		CF2614AC29AFA6FA001D0A3A /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148E29AFA6FA001D0A3A /* Wave.swift */; };
+		CF2614AD29AFA6FA001D0A3A /* MultiWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26148F29AFA6FA001D0A3A /* MultiWave.swift */; };
+		CF2614AE29AFA6FA001D0A3A /* View+AnimationCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149029AFA6FA001D0A3A /* View+AnimationCompletion.swift */; };
+		CF2614AF29AFA6FA001D0A3A /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149129AFA6FA001D0A3A /* ParticlesEmitter.swift */; };
+		CF2614B029AFA6FA001D0A3A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149229AFA6FA001D0A3A /* ErrorView.swift */; };
+		CF2614B129AFA6FA001D0A3A /* music.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149429AFA6FA001D0A3A /* music.json */; };
+		CF2614B229AFA6FA001D0A3A /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149529AFA6FA001D0A3A /* error.json */; };
+		CF2614B329AFA6FA001D0A3A /* microphone-access.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149629AFA6FA001D0A3A /* microphone-access.json */; };
+		CF2614B429AFA6FA001D0A3A /* speech.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149729AFA6FA001D0A3A /* speech.json */; };
+		CF2614B529AFA6FA001D0A3A /* keyboard.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149829AFA6FA001D0A3A /* keyboard.json */; };
+		CF2614B629AFA6FA001D0A3A /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149929AFA6FA001D0A3A /* loader.json */; };
+		CF2614B729AFA6FA001D0A3A /* laughing.json in Resources */ = {isa = PBXBuildFile; fileRef = CF26149A29AFA6FA001D0A3A /* laughing.json */; };
+		CF2614B829AFA6FA001D0A3A /* AmplitudeAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149C29AFA6FA001D0A3A /* AmplitudeAnalyzer.swift */; };
+		CF2614B929AFA6FA001D0A3A /* SoundClassificationAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149D29AFA6FA001D0A3A /* SoundClassificationAnalyzer.swift */; };
+		CF2614BA29AFA6FA001D0A3A /* AudioBufferAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149E29AFA6FA001D0A3A /* AudioBufferAnalyzer.swift */; };
+		CF2614BB29AFA6FA001D0A3A /* SerialQueueAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26149F29AFA6FA001D0A3A /* SerialQueueAnalyzer.swift */; };
+		CF2614BC29AFA6FA001D0A3A /* AVCaptureDevice+MicrophoneAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2614A129AFA6FA001D0A3A /* AVCaptureDevice+MicrophoneAccess.swift */; };
+		CF2614BD29AFA6FA001D0A3A /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2614A229AFA6FA001D0A3A /* String+Image.swift */; };
+		CF2614BE29AFA6FA001D0A3A /* EmojiRainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2614A429AFA6FA001D0A3A /* EmojiRainViewModel.swift */; };
+		CF2614BF29AFA6FA001D0A3A /* AmplitudeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2614A529AFA6FA001D0A3A /* AmplitudeTracker.swift */; };
+		CF2614C229AFA733001D0A3A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CF2614C129AFA733001D0A3A /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF26146929AFA645001D0A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF26145029AFA644001D0A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF26145729AFA644001D0A3A;
+			remoteInfo = FunnySound;
+		};
+		CF26147329AFA645001D0A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF26145029AFA644001D0A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF26145729AFA644001D0A3A;
+			remoteInfo = FunnySound;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF26145829AFA644001D0A3A /* FunnySound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnySound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF26145B29AFA644001D0A3A /* FunnySoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySoundApp.swift; sourceTree = "<group>"; };
+		CF26145F29AFA645001D0A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF26146229AFA645001D0A3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF26146829AFA645001D0A3A /* FunnySoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunnySoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF26146C29AFA645001D0A3A /* FunnySoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySoundTests.swift; sourceTree = "<group>"; };
+		CF26147229AFA645001D0A3A /* FunnySoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunnySoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF26147629AFA645001D0A3A /* FunnySoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySoundUITests.swift; sourceTree = "<group>"; };
+		CF26147829AFA645001D0A3A /* FunnySoundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySoundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF26148629AFA6FA001D0A3A /* SoundAnalysisInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAnalysisInteractor.swift; sourceTree = "<group>"; };
+		CF26148829AFA6FA001D0A3A /* WaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		CF26148929AFA6FA001D0A3A /* RainEmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainEmojiView.swift; sourceTree = "<group>"; };
+		CF26148A29AFA6FA001D0A3A /* Emitters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitters.swift; sourceTree = "<group>"; };
+		CF26148B29AFA6FA001D0A3A /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CF26148C29AFA6FA001D0A3A /* MicrophonePermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophonePermissionView.swift; sourceTree = "<group>"; };
+		CF26148E29AFA6FA001D0A3A /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		CF26148F29AFA6FA001D0A3A /* MultiWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiWave.swift; sourceTree = "<group>"; };
+		CF26149029AFA6FA001D0A3A /* View+AnimationCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+AnimationCompletion.swift"; sourceTree = "<group>"; };
+		CF26149129AFA6FA001D0A3A /* ParticlesEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
+		CF26149229AFA6FA001D0A3A /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		CF26149429AFA6FA001D0A3A /* music.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music.json; sourceTree = "<group>"; };
+		CF26149529AFA6FA001D0A3A /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		CF26149629AFA6FA001D0A3A /* microphone-access.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "microphone-access.json"; sourceTree = "<group>"; };
+		CF26149729AFA6FA001D0A3A /* speech.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = speech.json; sourceTree = "<group>"; };
+		CF26149829AFA6FA001D0A3A /* keyboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keyboard.json; sourceTree = "<group>"; };
+		CF26149929AFA6FA001D0A3A /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		CF26149A29AFA6FA001D0A3A /* laughing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = laughing.json; sourceTree = "<group>"; };
+		CF26149C29AFA6FA001D0A3A /* AmplitudeAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplitudeAnalyzer.swift; sourceTree = "<group>"; };
+		CF26149D29AFA6FA001D0A3A /* SoundClassificationAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundClassificationAnalyzer.swift; sourceTree = "<group>"; };
+		CF26149E29AFA6FA001D0A3A /* AudioBufferAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBufferAnalyzer.swift; sourceTree = "<group>"; };
+		CF26149F29AFA6FA001D0A3A /* SerialQueueAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialQueueAnalyzer.swift; sourceTree = "<group>"; };
+		CF2614A129AFA6FA001D0A3A /* AVCaptureDevice+MicrophoneAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+MicrophoneAccess.swift"; sourceTree = "<group>"; };
+		CF2614A229AFA6FA001D0A3A /* String+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		CF2614A429AFA6FA001D0A3A /* EmojiRainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRainViewModel.swift; sourceTree = "<group>"; };
+		CF2614A529AFA6FA001D0A3A /* AmplitudeTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplitudeTracker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF26145529AFA644001D0A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2614C229AFA733001D0A3A /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26146529AFA645001D0A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26146F29AFA645001D0A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF26144F29AFA644001D0A3A = {
+			isa = PBXGroup;
+			children = (
+				CF26145A29AFA644001D0A3A /* FunnySound */,
+				CF26146B29AFA645001D0A3A /* FunnySoundTests */,
+				CF26147529AFA645001D0A3A /* FunnySoundUITests */,
+				CF26145929AFA644001D0A3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF26145929AFA644001D0A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF26145829AFA644001D0A3A /* FunnySound.app */,
+				CF26146829AFA645001D0A3A /* FunnySoundTests.xctest */,
+				CF26147229AFA645001D0A3A /* FunnySoundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF26145A29AFA644001D0A3A /* FunnySound */ = {
+			isa = PBXGroup;
+			children = (
+				CF26145B29AFA644001D0A3A /* FunnySoundApp.swift */,
+				CF26149B29AFA6FA001D0A3A /* Analyzers */,
+				CF2614A029AFA6FA001D0A3A /* Extensions */,
+				CF26148529AFA6FA001D0A3A /* Interactors */,
+				CF2614A329AFA6FA001D0A3A /* ViewModels */,
+				CF26148729AFA6FA001D0A3A /* Views */,
+				CF26149329AFA6FA001D0A3A /* Resources */,
+				CF26145F29AFA645001D0A3A /* Assets.xcassets */,
+				CF26146129AFA645001D0A3A /* Preview Content */,
+			);
+			path = FunnySound;
+			sourceTree = "<group>";
+		};
+		CF26146129AFA645001D0A3A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF26146229AFA645001D0A3A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF26146B29AFA645001D0A3A /* FunnySoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF26146C29AFA645001D0A3A /* FunnySoundTests.swift */,
+			);
+			path = FunnySoundTests;
+			sourceTree = "<group>";
+		};
+		CF26147529AFA645001D0A3A /* FunnySoundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF26147629AFA645001D0A3A /* FunnySoundUITests.swift */,
+				CF26147829AFA645001D0A3A /* FunnySoundUITestsLaunchTests.swift */,
+			);
+			path = FunnySoundUITests;
+			sourceTree = "<group>";
+		};
+		CF26148529AFA6FA001D0A3A /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				CF26148629AFA6FA001D0A3A /* SoundAnalysisInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		CF26148729AFA6FA001D0A3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF26148D29AFA6FA001D0A3A /* ThirdParty */,
+				CF26148829AFA6FA001D0A3A /* WaveformView.swift */,
+				CF26148929AFA6FA001D0A3A /* RainEmojiView.swift */,
+				CF26148A29AFA6FA001D0A3A /* Emitters.swift */,
+				CF26148B29AFA6FA001D0A3A /* LottieView.swift */,
+				CF26148C29AFA6FA001D0A3A /* MicrophonePermissionView.swift */,
+				CF26149229AFA6FA001D0A3A /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF26148D29AFA6FA001D0A3A /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CF26148E29AFA6FA001D0A3A /* Wave.swift */,
+				CF26148F29AFA6FA001D0A3A /* MultiWave.swift */,
+				CF26149029AFA6FA001D0A3A /* View+AnimationCompletion.swift */,
+				CF26149129AFA6FA001D0A3A /* ParticlesEmitter.swift */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		CF26149329AFA6FA001D0A3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF26149429AFA6FA001D0A3A /* music.json */,
+				CF26149529AFA6FA001D0A3A /* error.json */,
+				CF26149629AFA6FA001D0A3A /* microphone-access.json */,
+				CF26149729AFA6FA001D0A3A /* speech.json */,
+				CF26149829AFA6FA001D0A3A /* keyboard.json */,
+				CF26149929AFA6FA001D0A3A /* loader.json */,
+				CF26149A29AFA6FA001D0A3A /* laughing.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF26149B29AFA6FA001D0A3A /* Analyzers */ = {
+			isa = PBXGroup;
+			children = (
+				CF26149C29AFA6FA001D0A3A /* AmplitudeAnalyzer.swift */,
+				CF26149D29AFA6FA001D0A3A /* SoundClassificationAnalyzer.swift */,
+				CF26149E29AFA6FA001D0A3A /* AudioBufferAnalyzer.swift */,
+				CF26149F29AFA6FA001D0A3A /* SerialQueueAnalyzer.swift */,
+			);
+			path = Analyzers;
+			sourceTree = "<group>";
+		};
+		CF2614A029AFA6FA001D0A3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF2614A129AFA6FA001D0A3A /* AVCaptureDevice+MicrophoneAccess.swift */,
+				CF2614A229AFA6FA001D0A3A /* String+Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF2614A329AFA6FA001D0A3A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CF2614A429AFA6FA001D0A3A /* EmojiRainViewModel.swift */,
+				CF2614A529AFA6FA001D0A3A /* AmplitudeTracker.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF26145729AFA644001D0A3A /* FunnySound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF26147C29AFA645001D0A3A /* Build configuration list for PBXNativeTarget "FunnySound" */;
+			buildPhases = (
+				CF26145429AFA644001D0A3A /* Sources */,
+				CF26145529AFA644001D0A3A /* Frameworks */,
+				CF26145629AFA644001D0A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunnySound;
+			packageProductDependencies = (
+				CF2614C129AFA733001D0A3A /* Lottie */,
+			);
+			productName = FunnySound;
+			productReference = CF26145829AFA644001D0A3A /* FunnySound.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF26146729AFA645001D0A3A /* FunnySoundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF26147F29AFA645001D0A3A /* Build configuration list for PBXNativeTarget "FunnySoundTests" */;
+			buildPhases = (
+				CF26146429AFA645001D0A3A /* Sources */,
+				CF26146529AFA645001D0A3A /* Frameworks */,
+				CF26146629AFA645001D0A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF26146A29AFA645001D0A3A /* PBXTargetDependency */,
+			);
+			name = FunnySoundTests;
+			productName = FunnySoundTests;
+			productReference = CF26146829AFA645001D0A3A /* FunnySoundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF26147129AFA645001D0A3A /* FunnySoundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF26148229AFA645001D0A3A /* Build configuration list for PBXNativeTarget "FunnySoundUITests" */;
+			buildPhases = (
+				CF26146E29AFA645001D0A3A /* Sources */,
+				CF26146F29AFA645001D0A3A /* Frameworks */,
+				CF26147029AFA645001D0A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF26147429AFA645001D0A3A /* PBXTargetDependency */,
+			);
+			name = FunnySoundUITests;
+			productName = FunnySoundUITests;
+			productReference = CF26147229AFA645001D0A3A /* FunnySoundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF26145029AFA644001D0A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CF26145729AFA644001D0A3A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CF26146729AFA645001D0A3A = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CF26145729AFA644001D0A3A;
+					};
+					CF26147129AFA645001D0A3A = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CF26145729AFA644001D0A3A;
+					};
+				};
+			};
+			buildConfigurationList = CF26145329AFA644001D0A3A /* Build configuration list for PBXProject "FunnySound" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF26144F29AFA644001D0A3A;
+			packageReferences = (
+				CF2614C029AFA732001D0A3A /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = CF26145929AFA644001D0A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF26145729AFA644001D0A3A /* FunnySound */,
+				CF26146729AFA645001D0A3A /* FunnySoundTests */,
+				CF26147129AFA645001D0A3A /* FunnySoundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF26145629AFA644001D0A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2614B229AFA6FA001D0A3A /* error.json in Resources */,
+				CF2614B429AFA6FA001D0A3A /* speech.json in Resources */,
+				CF2614B629AFA6FA001D0A3A /* loader.json in Resources */,
+				CF2614B729AFA6FA001D0A3A /* laughing.json in Resources */,
+				CF26146329AFA645001D0A3A /* Preview Assets.xcassets in Resources */,
+				CF2614B129AFA6FA001D0A3A /* music.json in Resources */,
+				CF2614B529AFA6FA001D0A3A /* keyboard.json in Resources */,
+				CF26146029AFA645001D0A3A /* Assets.xcassets in Resources */,
+				CF2614B329AFA6FA001D0A3A /* microphone-access.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26146629AFA645001D0A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26147029AFA645001D0A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF26145429AFA644001D0A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2614AC29AFA6FA001D0A3A /* Wave.swift in Sources */,
+				CF2614AE29AFA6FA001D0A3A /* View+AnimationCompletion.swift in Sources */,
+				CF2614BF29AFA6FA001D0A3A /* AmplitudeTracker.swift in Sources */,
+				CF2614A629AFA6FA001D0A3A /* SoundAnalysisInteractor.swift in Sources */,
+				CF2614AF29AFA6FA001D0A3A /* ParticlesEmitter.swift in Sources */,
+				CF2614BE29AFA6FA001D0A3A /* EmojiRainViewModel.swift in Sources */,
+				CF26145C29AFA644001D0A3A /* FunnySoundApp.swift in Sources */,
+				CF2614B929AFA6FA001D0A3A /* SoundClassificationAnalyzer.swift in Sources */,
+				CF2614BA29AFA6FA001D0A3A /* AudioBufferAnalyzer.swift in Sources */,
+				CF2614A729AFA6FA001D0A3A /* WaveformView.swift in Sources */,
+				CF2614BD29AFA6FA001D0A3A /* String+Image.swift in Sources */,
+				CF2614A829AFA6FA001D0A3A /* RainEmojiView.swift in Sources */,
+				CF2614B829AFA6FA001D0A3A /* AmplitudeAnalyzer.swift in Sources */,
+				CF2614B029AFA6FA001D0A3A /* ErrorView.swift in Sources */,
+				CF2614A929AFA6FA001D0A3A /* Emitters.swift in Sources */,
+				CF2614BC29AFA6FA001D0A3A /* AVCaptureDevice+MicrophoneAccess.swift in Sources */,
+				CF2614AB29AFA6FA001D0A3A /* MicrophonePermissionView.swift in Sources */,
+				CF2614AD29AFA6FA001D0A3A /* MultiWave.swift in Sources */,
+				CF2614AA29AFA6FA001D0A3A /* LottieView.swift in Sources */,
+				CF2614BB29AFA6FA001D0A3A /* SerialQueueAnalyzer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26146429AFA645001D0A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF26146D29AFA645001D0A3A /* FunnySoundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF26146E29AFA645001D0A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF26147729AFA645001D0A3A /* FunnySoundUITests.swift in Sources */,
+				CF26147929AFA645001D0A3A /* FunnySoundUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF26146A29AFA645001D0A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF26145729AFA644001D0A3A /* FunnySound */;
+			targetProxy = CF26146929AFA645001D0A3A /* PBXContainerItemProxy */;
+		};
+		CF26147429AFA645001D0A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF26145729AFA644001D0A3A /* FunnySound */;
+			targetProxy = CF26147329AFA645001D0A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF26147A29AFA645001D0A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF26147B29AFA645001D0A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF26147D29AFA645001D0A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FunnySound/Preview Content\"";
+				DEVELOPMENT_TEAM = 62XD3S9TNQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application would like access to the microphone to detect and display sounds occurring in the environment.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msfrms.FunnySound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF26147E29AFA645001D0A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FunnySound/Preview Content\"";
+				DEVELOPMENT_TEAM = 62XD3S9TNQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application would like access to the microphone to detect and display sounds occurring in the environment.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msfrms.FunnySound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF26148029AFA645001D0A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62XD3S9TNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msfrms.FunnySoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunnySound.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FunnySound";
+			};
+			name = Debug;
+		};
+		CF26148129AFA645001D0A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62XD3S9TNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msfrms.FunnySoundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunnySound.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FunnySound";
+			};
+			name = Release;
+		};
+		CF26148329AFA645001D0A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62XD3S9TNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msfrms.FunnySoundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FunnySound;
+			};
+			name = Debug;
+		};
+		CF26148429AFA645001D0A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62XD3S9TNQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msfrms.FunnySoundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FunnySound;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF26145329AFA644001D0A3A /* Build configuration list for PBXProject "FunnySound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF26147A29AFA645001D0A3A /* Debug */,
+				CF26147B29AFA645001D0A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF26147C29AFA645001D0A3A /* Build configuration list for PBXNativeTarget "FunnySound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF26147D29AFA645001D0A3A /* Debug */,
+				CF26147E29AFA645001D0A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF26147F29AFA645001D0A3A /* Build configuration list for PBXNativeTarget "FunnySoundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF26148029AFA645001D0A3A /* Debug */,
+				CF26148129AFA645001D0A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF26148229AFA645001D0A3A /* Build configuration list for PBXNativeTarget "FunnySoundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF26148329AFA645001D0A3A /* Debug */,
+				CF26148429AFA645001D0A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF2614C029AFA732001D0A3A /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF2614C129AFA733001D0A3A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF2614C029AFA732001D0A3A /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CF26145029AFA644001D0A3A /* Project object */;
+}
